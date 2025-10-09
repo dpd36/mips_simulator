@@ -62,7 +62,8 @@ int main(int argCount, char* argValues[])
     printFormattedBits(floatToBits(loopCounterIncrement));
 
     // Prevents increment of 0 from printing possible overflow warning
-    if (loopCounterIncrement == 0.0f) {
+    if (loopCounterIncrement == 0.0f) 
+    {
         cout << "\nThere is no overflow!" << endl;
         return 0;
     }
